@@ -3,39 +3,135 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
     <title>KeyAnyWhere</title>
-    <link href="vendor/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/estilizacao.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container ">
-        <br>
-        <img src=""/> IMagem do KAW 
-        <h1>O que é o KeyAnyWhere?</h1>
-        <p></p>
-        <br>
-
-        <h1>Surgimento</h1>
-        <p></p>
-        <br>
-
-        <h1>Princípios</h1>
-        <p></p>
-        <br>
-
-        <h1>Ambiente de demonstração</h1>
-        <p></p>
-        <br>
-        <h2>Pesquisa de satisfação</h2>
-        <p></p>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdFOKGfRWYIRdJcH3Zvi4947GLwipajLjXW5Fa2FdnlG78V3w/viewform?embedded=true" width="640" height="1588" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
-        <br>
-
-        <h1>Documentação e repositório</h1>
-        <p></p>
-        <br>
-
+  <div class="container ">
+    <br>
+    <div class="text-center">
+      <img src="assets/img/logo-kaw.png">
     </div>
 
-    <script src="vendor/js/bootstrap.bundle.min.js"></script>
+    <h1>O que é o KeyAnyWhere?</h1>
+    <p>
+        KeyAnyWhere ou KAW, é um gerenciador de senha Web, que foca nas funcionalidades essenciais de um chaveiro.<br/>
+        Se você precisa de um gerenciador que muitas pessoas irão utilizar, recomendo o <a href="https://www.passbolt.com/" target="_blank">Passbolt</a>.
+        Agora se você precisa de um para usar somente no seu computador ou celular, o <a href="https://keepassxc.org/" target="_blank">KeePassXC</a> é a melhor escolha.
+    </p>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/1-login.png" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block bg-secondary">
+            <h5>Login</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/2-home.png" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block bg-secondary">
+            <h5>Home</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/3-listagem-entradas.png" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block bg-secondary">
+            <h5>Listagem das entradas</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/4-entrada-nova.png" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block bg-secondary">
+            <h5>Nova entrada</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/5-entrada-senha-insegura.png" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block bg-secondary">
+            <h5>Alerta de senha insegura</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/6-logs.png" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block bg-secondary">
+            <h5>Logs de atividades</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/7-ips-bloqueados.png" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block bg-secondary">
+            <h5>IPs bloqueados</h5>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon btn-interacao-carrossel" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon btn-interacao-carrossel" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+
+    <br><hr>
+
+    <h1>Surgimento do KeyAnyWhere</h1>
+    <p>
+        Durante muito tempo o KeePassXC me atendeu perfeitamente, mas surgiu a necessidade de transitar com as minhas senhas entre pc pessoal, de trabalho e celular.<br>
+        As ferramentas disponíveis no mercado não me agradavam e então resolvi desenvolver a minha.<br>
+        Nesse período da vida, eu estava cursando Sistemas para Internet no IFMS, então decidi utilizar a minha ideia como TCC.
+    </p>
+
+    <br><hr>
+
+    <h1>Princípios</h1>
+    <ul>
+        <li>Segurança em detrimento da escolha do usuário. Ou seja, algumas coisas são projetadas para serem mais seguras do que convenientes.</li>
+        <li>
+            Implementamos somente as funcionalidades essenciais, se baseando no princípio do KISS combinado com uma mentalidade de MVP.<br>
+            Com essa abordagem alguns benefícios podem ser destacados:
+            <ul>
+                <li>Superfície de ataque reduzida</li>
+                <li>Menos consumo hardware</li>
+                <li>Fácil utilização. Menos cliques para executar as principais ações.</li>
+                <li>Fácil manutenção</li>
+            </ul>
+        </li>
+    </ul>
+
+    <br><hr>
+
+    <h1>Ambiente de demonstração</h1>
+    <p>
+        Você pode testar o KAW antes de usar. Acesse o ambiente de demonstração com os dados abaixo: <br><br>
+        <strong>Site: </strong><a href="https://demo.keyanywhere.com.br/" target="_blank">demo.keyanywhere.com.br</a><br>
+        <strong>Usuário: </strong>demo@avds.eti.br<br>
+        <strong>Senha: </strong>d3m0$tr@c*o$<br>
+        <strong>Segundo Fator de Autenticação: </strong>111222<br>
+    </p>
+
+    <br>
+
+    <h2>Pesquisa de satisfação</h2>
+    <p>
+        Por favor, responda a nossa pesquisa de satisfação. Vai me ajudar muito no TCC e melhorar a ferramenta.<br>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdFOKGfRWYIRdJcH3Zvi4947GLwipajLjXW5Fa2FdnlG78V3w/viewform?usp=sf_link" target="_blank">Responder pesquisa</a>
+    </p>
+
+    <br><hr>
+
+    <h1>Documentação e repositório</h1>
+    <p>
+        Na documentação e no repositório você encontra mais informações úteis: <br>
+        <strong>GitHub: </strong><a href="https://github.com/arthusantiago/KeyAnyWhere" target="_blank">arthusantiago/KeyAnyWhere</a><br>
+        <strong>Documentação: </strong><a href="https://github.com/arthusantiago/KeyAnyWhere/wiki" target="_blank">KeyAnyWhere/wiki</a><br>
+    </p>
+    <br>
+  </div>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
