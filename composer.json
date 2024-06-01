@@ -1,0 +1,14 @@
+{
+    "require": {
+        "twbs/bootstrap": "@stable"
+    },
+    "autoload": {
+        "psr-4": {
+            "Config\\": "config/"
+        }
+    },
+    "scripts": {
+        "post-package-install": "Config\\PreparaCssJS::executar",
+        "post-package-update":  "Config\\PreparaCssJS::executar"
+    }
+}
