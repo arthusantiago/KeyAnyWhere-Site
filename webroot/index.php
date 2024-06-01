@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="webroot/img/favicon.ico">
     <title>KeyAnyWhere</title>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/estilizacao.css" rel="stylesheet">
+    <link href="/webroot/css/bootstrap.min.css" rel="stylesheet">
+    <link href="webroot/css/estilizacao.css" rel="stylesheet">
 </head>
 <body>
   <div class="container ">
     <br>
     <div class="text-center">
-      <img src="assets/img/logo-kaw.png">
+      <img src="webroot/img/logo-kaw.png">
     </div>
 
     <h1>O que é o KeyAnyWhere?</h1>
@@ -23,43 +23,43 @@
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="assets/img/1-login.png" class="d-block w-100">
+          <img src="webroot/img/1-login.png" class="d-block w-100">
           <div class="carousel-caption d-none d-md-block bg-secondary">
             <h5>Login</h5>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="assets/img/2-home.png" class="d-block w-100">
+          <img src="webroot/img/2-home.png" class="d-block w-100">
           <div class="carousel-caption d-none d-md-block bg-secondary">
             <h5>Home</h5>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="assets/img/3-listagem-entradas.png" class="d-block w-100">
+          <img src="webroot/img/3-listagem-entradas.png" class="d-block w-100">
           <div class="carousel-caption d-none d-md-block bg-secondary">
             <h5>Listagem das entradas</h5>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="assets/img/4-entrada-nova.png" class="d-block w-100">
+          <img src="webroot/img/4-entrada-nova.png" class="d-block w-100">
           <div class="carousel-caption d-none d-md-block bg-secondary">
             <h5>Nova entrada</h5>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="assets/img/5-entrada-senha-insegura.png" class="d-block w-100">
+          <img src="webroot/img/5-entrada-senha-insegura.png" class="d-block w-100">
           <div class="carousel-caption d-none d-md-block bg-secondary">
             <h5>Alerta de senha insegura</h5>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="assets/img/6-logs.png" class="d-block w-100">
+          <img src="webroot/img/6-logs.png" class="d-block w-100">
           <div class="carousel-caption d-none d-md-block bg-secondary">
             <h5>Logs de atividades</h5>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="assets/img/7-ips-bloqueados.png" class="d-block w-100">
+          <img src="webroot/img/7-ips-bloqueados.png" class="d-block w-100">
           <div class="carousel-caption d-none d-md-block bg-secondary">
             <h5>IPs bloqueados</h5>
           </div>
@@ -140,6 +140,6 @@
     </p>
     <br>
   </div>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="/webroot/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
