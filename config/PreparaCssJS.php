@@ -9,18 +9,32 @@ use Composer\Installer\PackageEvent;
  *
  * @global
  */
-class PrepearaCssJS {
+class PreparaCssJS
+{
+    private static $cssOrigem = 'vendor/twbs/bootstrap/dist/css/bootstrap.min.css';
+    private static $cssDestino = 'webroot/css/bootstrap.min.css';
+
+    private static $jsOrigem = 'vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js';
+    private static $jsDestino = 'webroot/js/bootstrap.bundle.min.js';
+
+    /**
+     * Copia o arquivo CSS/JS do pacote instalado/atualizado para devida pasta dentro do webroot/
+     *
+     * @access	static public
+     * @param	PackageEvent $event
+     * @return	void
+     */
     static public function executar(PackageEvent $event)
     {
-        $cssOrigem = 'vendor/twbs/bootstrap/dist/css/bootstrap.min.css';
-        $cssDestino = 'webroot/css/bootstrap.min.css';
-        self::excluiArquivo($cssDestino);
-        copy($cssOrigem, $cssDestino);
+        $installedPackage = $event->getOperation()->getPackage();
 
-        $jsOrigem = 'vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js';
-        $jsDestino = 'webroot/js/bootstrap.bundle.min.js';
-        self::excluiArquivo($jsDestino);
-        copy($jsOrigem, $jsDestino);
+        if ($installedPackage->getName() == 'twbs/bootstrap') {
+            self::excluiArquivo(self::$cssDestino);
+            copy(self::$cssOrigem, self::$cssDestino);
+
+            self::excluiArquivo(self::$jsDestino);
+            copy(self::$jsOrigem, self::$jsDestino);
+        }
     }
 
     /**
